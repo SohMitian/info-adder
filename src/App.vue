@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import HeadlineTItle from "./components/HeadlineTItle.vue";
-import InfoList from "./components/InfoList.vue";
 import UploadFile from './components/UploadFile.vue'
+import FooterTitle from '@/components/FooterTitle.vue'
 </script>
 
 <template>
   <div class="container">
     <!-- ヘッドライン -->
     <header>
-      <img alt="Vue logo" class="logo" src="./assets/logo.png" width="125" height="125" />
       <div class="wrapper">
         <HeadlineTItle />
       </div>
@@ -20,9 +19,11 @@ import UploadFile from './components/UploadFile.vue'
     </div>
 
   </div>
-  <main>
-    <InfoList />
-  </main>
+  
+  <!-- フッター -->
+  <footer>
+    <FooterTitle/>
+  </footer>
 </template>
 
 <style scoped>
